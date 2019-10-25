@@ -496,7 +496,7 @@ SELECT * FROM books JOIN authors ON books.author_id = authors.id WHERE authors.n
 ## You Do: Books and Authors (15 min / 2:25)
 
 See advanced_queries.sql in the
-[library_sql](https://git.generalassemb.ly/dc-wdi-python-django/library_sql)
+[library_sql](https://git.generalassemb.ly/seir-826/seir-826-library_sql)
 exercise.
 
 ## Aside: Less Common Joins
