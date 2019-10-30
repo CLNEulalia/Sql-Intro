@@ -367,7 +367,7 @@ part, things you've seen before...
 - integer
 - float
 - text / VARCHAR
-  - VARCHAR is limited length, TEXT is unlimited
+  - VARCHAR can be of variable length, TEXT is unlimited
 - date
 - time
 
