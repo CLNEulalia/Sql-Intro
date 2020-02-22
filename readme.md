@@ -218,7 +218,11 @@ like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
 
 ### So which is better?
 
-**Sorry, there's no easy answer.** While relational and non-relational databases
+<details>
+
+<summary> What do you think? </summary>
+**Sorry, there's no easy answer.**
+While relational and non-relational databases
 have some key differences on paper, popular database management systems are
 evolving rapidly to meet the needs of a variety of users. You can likely
 accomplish the same goals with either a SQL or noSQL database.
@@ -235,8 +239,15 @@ applications may prefer the rigidity of SQL databases to monitor account data
 and transactions. Relational databases are also good at managing inventories and
 tracking deliveries. ACID compliance ensures that a process is finished to
 completion or not at all. You'll never lose a package or find it in two places.
+</details>
 
 ## Make sure Postgres.app is installed
+
+Press `command` + `space` and type 'postgres'. You should see the following image: 
+
+![Postgres screenshot](https://i.imgur.com/3dA2evm.png)
+
+If not, go to the [Postgres App](https://postgresapp.com/) website and follow the instructions to download manually. 
 
 ## Exploring Postgres CLI (20 minutes / 1:00)
 
