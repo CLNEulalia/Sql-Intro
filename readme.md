@@ -544,6 +544,16 @@ association with a specific category.
 
 ![many_to_many](images/many_to_many.png)
 
+### Lecture Objectives - COMPLETE! 
+
+* Contrast relational and non-relational databases. ✅
+* Create, set up, and seed a PostgreSQL database. ✅
+* Execute SQL commands to perform CRUD actions. ✅
+* Describe how to represent relationships in SQL databases. ✅
+* Use JOIN to combine tables in a SELECT. ✅
+
+![celebrate](https://media.giphy.com/media/LSNqpYqGRqwrS/giphy.gif)
+
 ## Closing/Questions 
 
 - What is the distinctive feature of a relational database?
@@ -551,16 +561,6 @@ association with a specific category.
 - What are the different types of relations that exist in a relational database?
 - How do we indicate a one-to-many relationship in a database?
 
-### Lecture Objectives - COMPLETE! 
-* Contrast relational and non-relational databases. ✅
-* Create, set up, and seed a PostgreSQL database. ✅
-* Execute SQL commands to perform CRUD actions. ✅
-* Describe how to represent relationships in SQL databases. ✅
-* Use JOIN to combine tables in a SELECT. ✅
-
-**Congrats on finishing all objectives from this morning's lecture!**
-
-![celebrate](https://media.giphy.com/media/LSNqpYqGRqwrS/giphy.gif)
 
 ## Practice
 
