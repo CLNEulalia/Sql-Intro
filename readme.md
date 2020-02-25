@@ -221,7 +221,9 @@ like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
 <details>
 
 <summary> What do you think? </summary>
+
 **Sorry, there's no easy answer.**
+
 While relational and non-relational databases
 have some key differences on paper, popular database management systems are
 evolving rapidly to meet the needs of a variety of users. You can likely
@@ -568,6 +570,7 @@ fully expect this to be a challenge.
 - [SQL Zoo](https://sqlzoo.net/)
 - [W3 Schools SQL tutorial](https://www.w3schools.com/sql/)
 - [SQL Course](http://www.sqlcourse.com/)
+- [Database Interview Questions](https://www.softwaretestinghelp.com/database-interview-questions/)
 
 ## [License](LICENSE)
 
