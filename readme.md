@@ -214,8 +214,8 @@ like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
 
 ##### Automatic Scaling
 
-- Sharding distributes data across a cluster of servers
-- Replica sets provide low-latency high-throughput deployments
+- Sharding distributes data across a cluster of servers (data can be broken up across different remote hosts)
+- Replica sets provide low-latency high-throughput deployments (multiple data sets provide redundancy and allow for rapid updating)
 
 ### Comparing and Contrasting SQL vs. NOSQL: Which is better? 
 
