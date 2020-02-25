@@ -226,7 +226,7 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 3. What use cases would be optimal for SQL and NOSQL databases? 
 4. Which do you think is better? Why?
 
-## BREAK (10 minutes)
+### BREAK (10 minutes)
 
 ## Now Let's Try Out PostgreSQL! 
 
@@ -404,7 +404,7 @@ Clone down and follow the instructions in the
 
 Complete the queries in `basic_queries.sql` in the library_sql repo.
 
-## BREAK (10 minutes)
+### BREAK (10 minutes)
 
 ## Relationships in SQL / SQL JOINs 
 
