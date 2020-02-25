@@ -5,7 +5,7 @@
 It's time to learn our second database format! SQL is an older form of database
 management. Despite it's age, it's still one of the most common and popular
 forms of data storage in building web applications - we're going to use it when
-we start learning Django!
+we start learning Django! SQL stands for structured query language, the programming infrastructure used for retrieving data from relational databases. 
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ building node applications. In fact, there are many alternatives. In this lesson
 we will contrast PostgreSQL, a relational database, with MongoDB, a
 non-relational database.
 
-## What is a Relational Database? (10 min / 0:10)
+## What is a Relational Database? 
 
 Here's the super dense technical definition. Not required for understanding how
 it works unless you want to dive extremely deeply.
@@ -79,10 +79,9 @@ database from the command line
 - we will use one called `psql` for PostgreSQL
 - **What was the MongoDB equivalent?**
 
-## Data Compared: Collections -> Tables (10 min / 0:20)
+## Data Compared: Collections (MongoDB) vs. Tables (PostgreSQL)
 
-Within a MongoDB database, our data is organized in collections of JSON-like objects, called documents. Here's an
-example collection:
+Within a MongoDB database (NOSQL or nonrelational), our data is organized in collections of JSON-like objects, called documents. Here's an example collection:
 
 ```js
 [
@@ -117,7 +116,7 @@ example collection:
 ]
 ```
 
-In a relational database, this data would be stored in two tables.
+In a relational (SQL) database, this data would be stored in two separate tables.
 
 **artists**
 
@@ -138,18 +137,20 @@ In a relational database, this data would be stored in two tables.
 See also: [Naming style guide](http://www.sqlstyle.guide/).
 
 Note: there's no definitive naming convention for SQL databases. It's far more
-important to be consistent across your db. I'm in the "plural table names and
-singular column names" camp
+important to be consistent across your db. More are in the "plural table names and
+singular column names" camp. 
 
-### You Do: Database Conversion (10 min / 0:30)
+### You Do: Database Conversion 
 
-Find a partner and think of a shared interest that can be used to demonstrate a
-one-to-many relationship like the example above. Use a model from a previous
-project if you need some inspiration. Find a space to whiteboard or draw on
-paper and create sample JSON data. Then create tables to represent the same data
+In groups of two, think of a shared interest that can be used to demonstrate a
+one-to-many relationship like the example above. Use a Mongo model from a previous
+project if you need some inspiration. Draw it out on paper or in a Google Doc
+and create some sample JSON data. Then create tables to represent the same data
 as it would appear in a SQL database.
 
-## Relational vs Non-Relational | PostgreSQL vs MongoDB (10 min / 0:40)
+- What are the advantages of each structure? 
+
+## Relational vs Non-Relational | PostgreSQL vs MongoDB 
 
 Non-Relational or **noSQL** databases have existed in some form for decades,
 however their use didn't become wide spread until recently. noSQL databases
@@ -166,7 +167,7 @@ consistency.
 
 ### MongoDB is non-relational (noSQL)
 
-MongoDB is document based. Meaning, data is organized in collections of related
+MongoDB is document-based. Meaning, data is organized in collections of related
 documents formatted in JSON.
 
 #### Key Advantages
@@ -216,7 +217,7 @@ like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
 - Sharding distributes data across a cluster of servers
 - Replica sets provide low-latency high-throughput deployments
 
-### Comparing and Contrasting SQL vs. NOSQL: Which is better? (25 minutes)
+### Comparing and Contrasting SQL vs. NOSQL: Which is better? 
 
 In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5) on Relational vs. Nonrelational databases. Discuss the following questions in your groups, which we'll review when we come back together as a class: 
 
@@ -225,21 +226,30 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 3. What use cases would be optimal for SQL and NOSQL databases? 
 4. Which do you think is better? Why?
 
+### Lecture Objectives: 
+* Contrast relational and non-relational databases. ✅
+* Create, set up, and seed a PostgreSQL database. 👈
+* Execute SQL commands to perform CRUD actions.
+* Describe how to represent relationships in SQL databases.
+* Use JOIN to combine tables in a SELECT.
+
+## BREAK (10 minutes)
+
 ## Now Let's Try Out PostgreSQL! 
 
-## Make sure Postgres.app is installed
+### Make sure Postgres.app is installed
 
-Press `command` + `space` and type 'postgres'. You should see the following image: 
+Press `command` + `space` to open your spotlight search, and type 'postgres'. You should see the following image: 
 
 ![Postgres screenshot](https://i.imgur.com/3dA2evm.png)
 
 If not, go to the [Postgres App](https://postgresapp.com/) website and follow the instructions to download manually. 
 
-## Exploring Postgres CLI (20 minutes / 1:00)
+## Exploring Postgres CLI 
 
 Start by "spotlight searching" (`command-space`) for Postgres and launching
 `Postgres.app`. Once you see the elephant in your Mac menu bar, you'll know
-Postgres is running. This is similar to how we had to run `mongod` before we
+Postgres is running. This is similar to how we had to run `mongo` before we
 could connect to it.
 
 ### psql commands
@@ -343,7 +353,7 @@ SELECT column_name, other_column FROM table_name WHERE some_value > 100;
 SELECT column_name, other_column FROM table_name WHERE value > 100 LIMIT 10 ORDER BY DESC ;
 ```
 
-## Schema (10 minutes / 1:10)
+## Schema 
 
 Every application's database will have one or more tables. You will recall, each
 table stores information about a particular model (e.g., `artists`, `songs`).
@@ -387,16 +397,23 @@ start with something simple.
 Instead of typing this into `psql`, you can write to a `.sql` file and run it,
 just like we have with `.js` and `.rb` files.
 
-## We Do: Building Our Database & Basic Queries (30 min / 1:40)
+## We Do: Building Our Database & Basic Queries 
 
 Clone down and follow the instructions in the
 [library SQL Exercise repo](https://git.generalassemb.ly/seir-129/library_sql).
 
 Complete the queries in `basic_queries.sql` in the library_sql repo.
 
-## BREAK (10 min / 1:50)
+## BREAK (10 minutes)
 
-## Relationships in SQL / SQL JOINs (20 min / 2:10)
+### Lecture Objectives: 
+* Contrast relational and non-relational databases. ✅
+* Create, set up, and seed a PostgreSQL database. ✅
+* Execute SQL commands to perform CRUD actions. ✅
+* Describe how to represent relationships in SQL databases. 👈
+* Use JOIN to combine tables in a SELECT.
+
+## Relationships in SQL / SQL JOINs 
 
 One of the key features of relational databases is that they can represent
 relationships between rows in different tables.
@@ -490,13 +507,13 @@ SELECT * FROM books JOIN authors ON books.author_id = authors.id;
 SELECT * FROM books JOIN authors ON books.author_id = authors.id WHERE authors.nationality = 'United States of America';
 ```
 
-## You Do: Books and Authors (15 min / 2:25)
+## You Do: Books and Authors 
 
 See advanced_queries.sql in the
 [library_sql](https://git.generalassemb.ly/seir-826/seir-826-library_sql)
 exercise.
 
-## Aside: Less Common Joins
+## Hungry for More? Less Common Joins
 
 There are actually a number of ways to join multiple tables with `JOIN`, if
 you're really curious, check out this article:
@@ -527,12 +544,23 @@ association with a specific category.
 
 ![many_to_many](images/many_to_many.png)
 
-## Closing/Questions (5 min / 2:30)
+## Closing/Questions 
 
 - What is the distinctive feature of a relational database?
 - How is information stored in a relational database?
 - What are the different types of relations that exist in a relational database?
 - How do we indicate a one-to-many relationship in a database?
+
+### Lecture Objectives - COMPLETE! 
+* Contrast relational and non-relational databases. ✅
+* Create, set up, and seed a PostgreSQL database. ✅
+* Execute SQL commands to perform CRUD actions. ✅
+* Describe how to represent relationships in SQL databases. ✅
+* Use JOIN to combine tables in a SELECT. ✅
+
+**Congrats on finishing all objectives from this morning's lecture!**
+
+![celebrate](https://media.giphy.com/media/LSNqpYqGRqwrS/giphy.gif)
 
 ## Practice
 
