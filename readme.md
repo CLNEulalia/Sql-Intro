@@ -81,7 +81,7 @@ database from the command line
 
 ## Data Compared: Collections -> Tables (10 min / 0:20)
 
-Within a MongoDB database, our data is organized in JSON-like objects. Here's an
+Within a MongoDB database, our data is organized in collections of JSON-like objects, called documents. Here's an
 example collection:
 
 ```js
@@ -216,32 +216,16 @@ like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
 - Sharding distributes data across a cluster of servers
 - Replica sets provide low-latency high-throughput deployments
 
-### So which is better?
+### Comparing and Contrasting SQL vs. NOSQL: Which is better? (25 minutes)
 
-<details>
+In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5) on Relational vs. Nonrelational databases. Discuss the following questions in your groups, which we'll review when we come back together as a class: 
 
-<summary> What do you think? </summary>
+1. How would you define relational databases? List an example of one.
+2. How would you define nonrelational databases? List an example of one.
+3. What use cases would be optimal for SQL and NOSQL databases? 
+4. Which do you think is better? Why?
 
-**Sorry, there's no easy answer.**
-
-While relational and non-relational databases
-have some key differences on paper, popular database management systems are
-evolving rapidly to meet the needs of a variety of users. You can likely
-accomplish the same goals with either a SQL or noSQL database.
-
-In general, noSQL databases are great for unstructured, inconsistent, or
-frequently changing data. Think Facebook. Facebook is rapidly evolving and it
-needs a flexible way to store and modify existing data. noSQL is a good fit for
-medical records too! Patient data may look very different between different
-doctors or hospital. To compare or compile this information would be nearly
-impossible with a relational database with a strict schema.
-
-Relational databases are great when secure transactions are important. Banking
-applications may prefer the rigidity of SQL databases to monitor account data
-and transactions. Relational databases are also good at managing inventories and
-tracking deliveries. ACID compliance ensures that a process is finished to
-completion or not at all. You'll never lose a package or find it in two places.
-</details>
+## Now Let's Try Out PostgreSQL! 
 
 ## Make sure Postgres.app is installed
 
