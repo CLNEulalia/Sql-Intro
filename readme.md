@@ -226,16 +226,16 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 3. What use cases would be optimal for SQL and NOSQL databases? 
 4. Which do you think is better? Why?
 
+## BREAK (10 minutes)
+
+## Now Let's Try Out PostgreSQL! 
+
 ### Lecture Objectives: 
 * Contrast relational and non-relational databases. ✅
 * Create, set up, and seed a PostgreSQL database. 👈
 * Execute SQL commands to perform CRUD actions.
 * Describe how to represent relationships in SQL databases.
 * Use JOIN to combine tables in a SELECT.
-
-## BREAK (10 minutes)
-
-## Now Let's Try Out PostgreSQL! 
 
 ### Make sure Postgres.app is installed
 
@@ -406,14 +406,14 @@ Complete the queries in `basic_queries.sql` in the library_sql repo.
 
 ## BREAK (10 minutes)
 
+## Relationships in SQL / SQL JOINs 
+
 ### Lecture Objectives: 
 * Contrast relational and non-relational databases. ✅
 * Create, set up, and seed a PostgreSQL database. ✅
 * Execute SQL commands to perform CRUD actions. ✅
 * Describe how to represent relationships in SQL databases. 👈
 * Use JOIN to combine tables in a SELECT.
-
-## Relationships in SQL / SQL JOINs 
 
 One of the key features of relational databases is that they can represent
 relationships between rows in different tables.
