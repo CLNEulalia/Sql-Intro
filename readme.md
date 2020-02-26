@@ -140,15 +140,8 @@ Note: there's no definitive naming convention for SQL databases. It's far more
 important to be consistent across your db. More are in the "plural table names and
 singular column names" camp. 
 
-### You Do: Database Conversion 
-
-In groups of two, think of a shared interest that can be used to demonstrate a
-one-to-many relationship like the example above. Use a Mongo model from a previous
-project if you need some inspiration. Draw it out on paper or in a Google Doc
-and create some sample JSON data. Then create tables to represent the same data
-as it would appear in a SQL database.
-
 - What are the advantages of each structure? 
+- What might be some disadvantages of each structure? 
 
 ## Relational vs Non-Relational | PostgreSQL vs MongoDB 
 
@@ -226,8 +219,6 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 3. What use cases would be optimal for SQL and NOSQL databases? 
 4. Which do you think is better? Why?
 
-### BREAK (10 minutes)
-
 ## Now Let's Try Out PostgreSQL! 
 
 ### Lecture Objectives: 
@@ -265,8 +256,7 @@ Type `psql -d <dbname>` to connect to a specific database. There's usually a
 database that already exists called `postgres` so you can type
 `psql -d postgres`.
 
-Here's a quick demo. I recommend just watching and taking notes for this part.
-Don't try to code along.
+Here's a quick demo. You may choose to code along or just watch! 
 
 ```sql
 help -- general help
@@ -403,8 +393,6 @@ Clone down and follow the instructions in the
 [library SQL Exercise repo](https://git.generalassemb.ly/seir-129/library_sql).
 
 Complete the queries in `basic_queries.sql` in the library_sql repo. Do not go on to `advanced_queries` just yet. 
-
-### BREAK (10 minutes)
 
 ## Relationships in SQL / SQL JOINs 
 
