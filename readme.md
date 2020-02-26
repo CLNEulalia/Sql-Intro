@@ -13,7 +13,7 @@ we start learning Django! SQL stands for structured query language, the programm
 
 ## Objectives
 
-By the end of this, developers should be able to:
+By the end of this lecture, developers should be able to:
 
 - Contrast relational and non-relational databases
 - Create, set up, and seed a PostgreSQL database.
