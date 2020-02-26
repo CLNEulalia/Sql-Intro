@@ -402,7 +402,7 @@ just like we have with `.js` and `.rb` files.
 Clone down and follow the instructions in the
 [library SQL Exercise repo](https://git.generalassemb.ly/seir-129/library_sql).
 
-Complete the queries in `basic_queries.sql` in the library_sql repo.
+Complete the queries in `basic_queries.sql` in the library_sql repo. Do not go on to `advanced_queries` just yet. 
 
 ### BREAK (10 minutes)
 
@@ -517,7 +517,7 @@ SELECT * FROM books JOIN authors ON books.author_id = authors.id WHERE authors.n
 ## You Do: Books and Authors 
 
 See advanced_queries.sql in the
-[library_sql](https://git.generalassemb.ly/seir-826/seir-826-library_sql)
+[library_sql](https://git.generalassemb.ly/seir-129/library_sql/blob/master/advanced_queries.sql)
 exercise.
 
 ## Hungry for More? Less Common Joins
