@@ -490,6 +490,13 @@ as:
 
 ## Joins
 
+### Lecture Objectives: 
+* Contrast relational and non-relational databases. ✅
+* Create, set up, and seed a PostgreSQL database. ✅
+* Execute SQL commands to perform CRUD actions. ✅
+* Describe how to represent relationships in SQL databases. ✅
+* Use JOIN to combine tables in a SELECT. 👈
+
 To `SELECT` information on two or more tables at ones, we can use a `JOIN`
 clause. This will produce rows that contain information from both tables. When
 joining two or more tables, we have to tell the database how to match up the
