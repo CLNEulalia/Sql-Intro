@@ -230,18 +230,11 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 
 ### Make sure Postgres.app is installed
 
-Press `command` + `space` to open your spotlight search, and type 'postgres'. You should see the following image: 
-
-![Postgres screenshot](https://i.imgur.com/3dA2evm.png)
-
-If not, go to the [Postgres App](https://postgresapp.com/) website and follow the instructions to download manually. 
+1. Open a terminal window. 
+1. Type `brew services list`. You should see a service called `postgresql` with a green status of "started". 
+1. If not, run `brew services restart postgres` to restart your PostgreSQL server. 
 
 ## Exploring Postgres CLI 
-
-Start by "spotlight searching" (`command-space`) for Postgres and launching
-`Postgres.app`. Once you see the elephant in your Mac menu bar, you'll know
-Postgres is running. This is similar to how we had to run `mongo` before we
-could connect to it.
 
 ### psql commands
 
