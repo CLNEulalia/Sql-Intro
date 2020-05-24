@@ -237,7 +237,7 @@ We installed Postgres during Installfest in Week 1! Follow the commands below to
 1. If it says started in yellow, run `brew services restart postgres` to restart your PostgreSQL server. 
 1. If it says stopped in red, run `brew services start postgres` to start the server.
 
-!['successful postgres server](images/Screen Shot 2020-05-24 at 6.14.03 PM.png)
+!['successful postgres server](images/postgres-started.png)
 
 
 
