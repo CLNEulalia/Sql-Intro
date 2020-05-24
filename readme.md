@@ -228,11 +228,18 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 * Describe how to represent relationships in SQL databases.
 * Use JOIN to combine tables in a SELECT.
 
-### Make sure Postgres.app is installed
+### Make sure Postgres is installed
+
+We installed Postgres during Installfest in Week 1! Follow the commands below to ensure that it is running. 
 
 1. Open a terminal window. 
 1. Type `brew services list`. You should see a service called `postgresql` with a green status of "started". 
-1. If not, run `brew services restart postgres` to restart your PostgreSQL server. 
+1. If it says started in yellow, run `brew services restart postgres` to restart your PostgreSQL server. 
+1. If it says stopped in red, run `brew services start postgres` to start the server.
+
+!['successful postgres server](images/Screen Shot 2020-05-24 at 6.14.03 PM.png)
+
+
 
 ## Exploring Postgres CLI 
 
