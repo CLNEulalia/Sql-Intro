@@ -230,12 +230,14 @@ In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/re
 
 ### Make sure Postgres is installed
 
-We installed Postgres during Installfest in Week 1! Follow the commands below to ensure that it is running. 
+We installed Postgres during [Installfest](https://git.generalassemb.ly/seir-323/installfest/blob/master/postgres.md) in Week 1! Follow the commands below to ensure that it is running. 
 
 1. Open a terminal window. 
 1. Type `brew services list`. You should see a service called `postgresql` with a green status of "started". 
 1. If it says started in yellow, run `brew services restart postgres` to restart your PostgreSQL server. 
 1. If it says stopped in red, run `brew services start postgres` to start the server.
+
+> On Linux use `service postgresql status` to check that Postgres is running. Postgres will only work if you see a green circle and the words "active (running)" somewhere in the output.
 
 !['successful postgres server](images/postgres-started.png)
 
