@@ -70,14 +70,90 @@ in a non-relational DB (also called noSQL sometimes).
 **Database Management System (DBMS):** The software that lets a user interact
 (query) the data in a database
 
-- relational examples include PostgreSQL and MySQL
-- **What DBMS did we use when building MERN apps?**
+- Relational examples include PostgreSQL and MySQL
+- Nonrelational include MongoDB, Redis, CouchDB
 
 **Database CLI:** A tool offered by most DBMSs that allow users to query the
 database from the command line
 
-- we will use one called `psql` for PostgreSQL
+- We will use one called `psql` for PostgreSQL
 - **What was the MongoDB equivalent?**
+
+## Relational vs Non-Relational | PostgreSQL vs MongoDB 
+
+Non-Relational or **noSQL** databases have existed in some form for decades,
+however their use didn't become wide spread until recently. noSQL databases
+became an important alternative to relational databases in the early 2000s as
+internet tech companies' data storage needs changed and expanded. With the rise
+of social media and online marketplaces like eBay, the amount of data on the
+internet boomed. Users were not only getting information from the internet, they
+were contributing to it. This transition stressed the capabilities of relational
+databases due to the volume and variability of user-generated data.
+
+noSQL databases **generally** offer more flexibility and scalability than
+traditional relational databases. However, they come with the cost of reduced
+consistency.
+
+### MongoDB is non-relational (noSQL)
+
+MongoDB is document-based. Meaning, data is organized in collections of related
+documents formatted in JSON.
+
+#### Key Advantages of NoSQL
+
+##### Usability
+
+- Documents (i.e. JSON objects) correspond to native data types in many
+  programming languages (like mongo + JSON)
+- Documents can contain data that varies or is incomplete, no need for
+  migrations
+
+##### High Performance
+
+- Documents can be embedded in one another reducing the need for joins.
+- Simple queries are very fast
+
+### PostgreSQL is relational (SQL)
+
+PostgreSQL is a relational database management system. There are many others
+like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
+
+#### Key Advantages of SQL
+
+##### Consistency
+
+- A lot of data is tabular already, relational databases store it in a similar
+  form
+- Schemas mean you know exactly what attributes (columns) for each database
+  entry (row)
+- Schemas can check the type of data being stored to ensure data coming in is
+  properly formatted and consistent with other entries.
+- Writes to a database follow ACID paradigm (atomicity, consistency, isolation,
+  durability). More about [ACID](https://en.wikipedia.org/wiki/ACID)
+
+##### SQL Dialect
+
+- SQL is used in most relational databases meaning interaction across different
+  relational DBMS is very similar
+- SQL is well documented and extremely robust in its utility
+- SQL queries are a powerful tool to quickly retrieve data in a large variety of
+  ways.
+
+#### Both offer:
+
+##### Automatic Scaling
+
+- Sharding distributes data across a cluster of servers (data can be broken up across different remote hosts)
+- Replica sets provide low-latency high-throughput deployments (multiple data sets provide redundancy and allow for rapid updating)
+
+### Further Reading: SQL vs. NOSQL
+
+Read the following [article](https://dev.to/jacobjzhang/a-beginner-s-reference-to-sql-vs-nosql-egk) on Relational vs. Nonrelational databases. Consider the following questions: 
+
+1. How would you define relational databases? List an example of one.
+2. How would you define nonrelational databases? List an example of one.
+3. What use cases would be optimal for SQL and NOSQL databases? 
+4. Which do you think is better? Why?
 
 ## Data Compared: Collections (MongoDB) vs. Tables (PostgreSQL)
 
@@ -142,82 +218,6 @@ singular column names" camp.
 
 - What are the advantages of each structure? 
 - What might be some disadvantages of each structure? 
-
-## Relational vs Non-Relational | PostgreSQL vs MongoDB 
-
-Non-Relational or **noSQL** databases have existed in some form for decades,
-however their use didn't become wide spread until recently. noSQL databases
-became an important alternative to relational databases in the early 2000s as
-internet tech companies' data storage needs changed and expanded. With the rise
-of social media and online marketplaces like eBay, the amount of data on the
-internet boomed. Users were not only getting information from the internet, they
-were contributing to it. This transition stressed the capabilities of relational
-databases due to the volume and variability of user-generated data.
-
-noSQL databases **generally** offer more flexibility and scalability than
-traditional relational databases. However, they come with the cost of reduced
-consistency.
-
-### MongoDB is non-relational (noSQL)
-
-MongoDB is document-based. Meaning, data is organized in collections of related
-documents formatted in JSON.
-
-#### Key Advantages
-
-##### Usability
-
-- Documents (i.e. JSON objects) correspond to native data types in many
-  programming languages (like mongo + JSON)
-- Documents can contain data that varies or is incomplete, no need for
-  migrations
-
-##### High Performance
-
-- Documents can be embedded in one another reducing the need for joins.
-- Simple queries are very fast
-
-### PostgreSQL is relational (SQL)
-
-PostgreSQL is a relational database management system. There are many others
-like MySQL, MS SQL, Oracle, and sqlite. They are all queried using SQL.
-
-#### Key Advantages
-
-##### Consistency
-
-- a lot of data is tabular already, relational databases store it in a similar
-  form
-- Schemas mean you know exactly what attributes (columns) for each database
-  entry (row)
-- Schemas can check the type of data being stored to ensure data coming in is
-  properly formatted and consistent with other entries.
-- writes to a database follow ACID paradigm (atomicity, consistency, isolation,
-  durability). More about [ACID](https://en.wikipedia.org/wiki/ACID)
-
-##### SQL Dialect
-
-- SQL is used in most relational databases meaning interaction across different
-  relational DBMS is very similar
-- SQL is well documented and extremely robust in its utility
-- SQL queries are a powerful tool to quickly retrieve data in a large variety of
-  ways.
-
-#### Both offer:
-
-##### Automatic Scaling
-
-- Sharding distributes data across a cluster of servers (data can be broken up across different remote hosts)
-- Replica sets provide low-latency high-throughput deployments (multiple data sets provide redundancy and allow for rapid updating)
-
-### Comparing and Contrasting SQL vs. NOSQL: Which is better? 
-
-In groups of 3-4, read the following [article](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5) on Relational vs. Nonrelational databases. Discuss the following questions in your groups, which we'll review when we come back together as a class: 
-
-1. How would you define relational databases? List an example of one.
-2. How would you define nonrelational databases? List an example of one.
-3. What use cases would be optimal for SQL and NOSQL databases? 
-4. Which do you think is better? Why?
 
 ## Now Let's Try Out PostgreSQL! 
 
